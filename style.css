@@ -4,3 +4,313 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/open-sans-v40-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --primary-color: #4589FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.log_in {
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 68px 86px;
+
+    & p {
+        padding-right: 36px;
+        font-size: 24px;
+    }
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    /* cursor: pointer; */
+    font-size: 24px;
+}
+
+.btn-primary {
+    padding: 10px 35px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #647188;
+    padding: 10px 35px;
+    border: 1px solid #647188;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+svg {
+    width: 101px;
+    height: 122px;
+    position: absolute;
+    color: #D9D9D9;
+    top: 80px;
+    left: 77px;
+}
+
+.hdl {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-hdl-cnt {
+    padding-bottom: 10px;
+    width: fit-content;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.log-in-hdl {
+    color: black;
+    font-size: 48px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.email_01_span {
+    color: #D1D1D1;
+    font-size: 19px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 22.80px;
+    word-wrap: break-word;
+}
+
+.bounding-box {
+    width: 24px;
+    height: 24px;
+    background: #D9D9D9;
+}
+
+.mail {
+    width: 20px;
+    height: 16px;
+    background: #A8A8A8;
+}
+
+.password_01_span {
+    color: #D1D1D1;
+    font-size: 19px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 22.80px;
+    word-wrap: break-word;
+}
+
+.bounding-box_01 {
+    width: 24px;
+    height: 24px;
+    background: #D9D9D9;
+}
+
+.lock {
+    width: 16px;
+    height: 21px;
+    background: #A8A8A8;
+}
+
+.button_span {
+    color: white;
+    font-size: 23px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 27.60px;
+    word-wrap: break-word;
+}
+
+.button_01_span {
+    color: #647188;
+    font-size: 23px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 27.60px;
+    word-wrap: break-word;
+}
+
+.button-wo-icon {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #4589FF;
+    overflow: hidden;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.button-seconday-wo-icon {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    overflow: hidden;
+    border-radius: 8px;
+    outline: 1px #647188 solid;
+    outline-offset: -1px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.frame-159 {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    display: flex;
+}
+
+.frame-157 {
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.frame-158 {
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.frame-176 {
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    display: inline-flex;
+}
+
+.email {
+    width: 422px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: white;
+    border-bottom: 1px #D1D1D1 solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.password {
+    width: 422px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: white;
+    border-bottom: 1px #D1D1D1 solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.log-in_01 {
+    height: 152px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    display: flex;
+}
+
+.frame-231 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    display: flex;
+}
+
+.frame-153 {
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background: white;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 39px;
+    display: inline-flex;
+}
